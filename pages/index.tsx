@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Layout from "../components/Layout";
 import Head from "next/head";
+// import { GetStaticProps, GetStaticPaths, GetServerSideProps } from 'next'
+
 
 const IndexPage = () => (
   <Layout title="Home | Next.js + TypeScript + Tailwind">
@@ -71,5 +73,21 @@ const IndexPage = () => (
     </div>
   </Layout>
 );
+
+// I always forget how to use this function
+
+// export const getStaticProps: GetStaticProps = async (context) => {
+
+//   const res = await fetch('https://.../posts')
+//   const posts = await res.json()
+
+//   // By returning { props: { posts } }, the Blog component
+//   // will receive `posts` as a prop at build time
+//   return {
+//     props: {
+//       posts,
+//     },
+//   }
+// }
 
 export default IndexPage;
